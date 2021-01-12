@@ -1,0 +1,19 @@
+{
+  "name": "Insurance-LandingPage_FEM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines":{
+    "npm":"6.14.10",
+    "node": "14.15.4"
+  },
+  "scripts": {
+    "build-css": "tailwindcss build /src/styles.css -o /public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.0.2"
+  }
+}
