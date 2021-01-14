@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/tailwind.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Document</title>
 </head>
-<body class="bg-red-500 text-indigo-800">
-    <h1>Hello</h1>
+<body>
+    <div>
+        <div>
+            <!--Navigation Bar-->
+            <nav class="flex justify-between items-center bg-white h-16 px-20">
+                <div>
+                    <!--INSURE Logo-->
+                    <img src="/images/logo.svg" alt="the_logo">
+                </div>
+                <ul class="font-karla flex items-center uppercase space-x-5 font-medium text-grayBlue">
+                    <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">How we work</a></li>
+                    <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">Blog</a></li>
+                    <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">Account</a></li>
+                    <li><button class="uppercase font-medium text-violet-veryDark border-violet-veryDark border-2 border-solid px-4 py-2 hover:text-white hover:bg-violet-veryDark transition duration-500 ease-in">
+                        View Plans
+                    </button>
+                </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--Hero Section-->
+        <div>
+            <!--Main-->
+            <div class="text-white bg-violet-dark flex-1 pt-24 pb-24 pl-20">
+                <!--Line-->
+                <div class="bg-white h-0.5 w-28 mb-16"></div>
+                <p class="font-dmSerif text-6xl mb-5">Humanizing<br> your insurance.</p>
+                <p class="font-karla mb-5">Get your life insurance coverage easier and faster. We blend our expertise <br>
+                   and technology to help you find the plan thats right for you. Ensure you <br> and your
+                loved ones are protected.</p>
+
+                <button class="uppercase font-medium text-white border-2 border-solid px-4 py-2 border-white hover:text-violet-dark hover:bg-white transition duration-500 ease-in">
+                    View Plans
+                </button>
+            </div>
+
+            <!--Hero Image-->
+            <div class="flex-2 z-10 absolute top-40 right-32">
+                <img class="h-1px w-auto" src="/images/image-intro-desktop.jpg" alt="happy_family">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
