@@ -18,7 +18,8 @@ module.exports = {
       },
       spacing: {
         pic: '490px',
-        her0: '615px'
+        her0: '615px',
+        patt: '1200px'
       }
     },
   },
