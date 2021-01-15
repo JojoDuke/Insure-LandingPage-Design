@@ -15,6 +15,10 @@ module.exports = {
         },
         grayBlue: 'hsl(216, 30%, 68%)',
         grayLight: 'hsl(0, 0%, 98%)'
+      },
+      spacing: {
+        pic: '490px',
+        her0: '615px'
       }
     },
   },

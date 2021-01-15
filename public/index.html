@@ -12,31 +12,38 @@
     <div>
         <div>
             <!--Navigation Bar-->
-            <nav class="flex justify-between items-center bg-white h-16 px-20">
+            <nav class="relative z-30 flex justify-between items-center bg-white h-16 px-20">
                 <div>
                     <!--INSURE Logo-->
                     <img src="/images/logo.svg" alt="the_logo">
                 </div>
-                <ul class="font-karla flex items-center uppercase space-x-5 font-medium text-grayBlue">
+                <img class="cursor-pointer absolute right-16 md:hidden" src="/images/icon-hamburger.svg" alt="hamburger" id="burger">
+                <ul class="font-karla hidden mt-44 px-2 pb-2 pt-5 right-0 absolute text-center flex-col justify-center items-center bg-white md:flex md:items-center md:flex-row md:mt-0 md:space-x-5 md:py-0 md:pr-20 uppercase font-medium text-grayBlue" id="menu">
                     <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">How we work</a></li>
                     <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">Blog</a></li>
                     <li><a href="#" class="hover:text-violet-veryDark transition duration-200 ease-in">Account</a></li>
-                    <li><button class="uppercase font-medium text-violet-veryDark border-violet-veryDark border-2 border-solid px-4 py-2 hover:text-white hover:bg-violet-veryDark transition duration-500 ease-in">
-                        View Plans
-                    </button>
-                </li>
+                    <li>
+                        <button class="uppercase font-medium text-violet-veryDark border-violet-veryDark border-2 border-solid px-4 py-2 hover:text-white hover:bg-violet-veryDark transition duration-500 ease-in">
+                            View Plans
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
 
         <!--Hero Section-->
         <div>
+            <!--Pattern-->
+            <img class="absolute left-0 top-96 hidden md:block" src="/images/bg-pattern-intro-left-desktop.svg" alt="left_pattern">
+            <img class="absolute right-0 top-0 z-20 h-3/4 hidden md:block" src="/images/bg-pattern-intro-right-desktop.svg" alt="right_pattern">
+
             <!--Main-->
-            <div class="text-white bg-violet-dark flex-1 py-24 pl-32">
+            <div class="text-white overflow-hidden bg-violet-dark flex-1 py-40 md:py-24 md:pl-32 mt-her0 flex flex-col justify-center items-center text-center mx-auto md:mt-0 md:text-left md:block">
                 <!--Line-->
-                <div class="bg-white h-0.5 w-28 mb-16"></div>
-                <p class="font-dmSerif text-6xl mb-5">Humanizing<br> your insurance.</p>
-                <p class="font-karla mb-5">Get your life insurance coverage easier and faster. We blend our expertise <br>
+                <div class="bg-white h-0.5 w-28 mb-16 hidden md:block"></div>
+
+                <p class="font-dmSerif text-6xl mb-12 md:mb-5">Humanizing<br> your insurance.</p>
+                <p class="font-karla mb-12 md:mb-5">Get your life insurance coverage easier and faster. We blend our expertise <br>
                    and technology to help you find the plan thats right for you. Ensure you <br> and your
                 loved ones are protected.</p>
 
@@ -46,8 +53,8 @@
             </div>
 
             <!--Hero Image-->
-            <div class="flex-2 z-10 absolute top-40 right-56">
-                <img class="family-pic" src="/images/image-intro-desktop.jpg" alt="happy_family">
+            <div class="flex-2 z-10 absolute top-0  md:top-40 md:right-56">
+                <img class="w-screen md:w-auto md:h-pic" src="/images/image-intro-desktop.jpg" alt="happy_family">
             </div>
 
             <!--Info Section-->
@@ -60,26 +67,26 @@
 
                         <div class="pb-36">
                             <p class="text-6xl text-violet-veryDark font-dmSerif mb-20">We're different</p>
-                            <div class="flex gap-10">
+                            <div class="flex flex-col gap-10 md:flex-row">
                                 <div>
                                     <img class="mb-6" src="/images/icon-snappy-process.svg" alt="">
                                     <p class="font-dmSerif text-violet-veryDark text-xl">Snappy Process</p>
-                                    <p class="font-karla text-violet-grayDark">Our application process can be completed in<br> minutes not hours.
-                                    Don't get stuck filling in<br> tedious forms.</p>
+                                    <p class="font-karla text-violet-grayDark break-words w-72">Our application process can be completed in minutes not hours.
+                                    Don't get stuck filling in tedious forms.</p>
                                 </div>
 
                                 <div>
                                     <img class="mb-6" src="/images/icon-affordable-prices.svg" alt="">
                                     <p class="font-dmSerif text-violet-veryDark text-xl">Affordable Prices</p>
-                                    <p class="font-karla text-violet-grayDark">We don't want you worrying about high monthly<br> costs
-                                    Our prices may be low but we still offer<br> the best coverage possible.</p>
+                                    <p class="font-karla text-violet-grayDark break-words w-72">We don't want you worrying about high monthly costs.
+                                    Our prices may be low but we still offer the best coverage possible.</p>
                                 </div>
 
                                 <div>
                                     <img class="mb-6" src="/images/icon-people-first.svg" alt="">
                                     <p class="font-dmSerif text-violet-veryDark text-xl">People First</p>
-                                    <p class="font-karla text-violet-grayDark">Our plans aren't full of conditions and clauses<br> to prevent payouts.
-                                    We make sure you're<br> covered when you need it.</p>
+                                    <p class="font-karla text-violet-grayDark break-words w-96">Our plans aren't full of conditions and clauses to prevent payouts.
+                                    We make sure you're covered when you need it.</p>
                                 </div>
                             </div>
                         </div>
@@ -162,5 +169,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="/public/ascript.js"></script>
 </body>
 </html>
